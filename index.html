@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel dos Reis Andrade | Engenheiro de IA & Automações</title>
+    <meta name="description" content="Engenheiro de IA e Automações especializado em Python, n8n, LangChain e desenvolvimento de soluções inteligentes para empresas.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+<body>
+    <!-- Glass Navigation Bar -->
+    <nav class="glass-nav animate-fade-up">
+        <a href="#" class="nav-logo">
+            GABRIEL<span style="color: var(--tech-cyan);">.</span>ANDRADE
+        </a>
+        <div class="nav-links">
+            <a href="#about">Trajetória</a>
+            <a href="#projects">Projetos</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#process">Processo</a>
+            <a href="#contact">Contato</a>
+        </div>
+        <a href="#contact" class="btn-nav-accent desktop-only">
+            Falar Comigo
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Menu Mobile">
+            <i data-lucide="menu" id="toggle-icon"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <a href="#about" class="mobile-nav-link">Trajetória</a>
+            <a href="#projects" class="mobile-nav-link">Projetos</a>
+            <a href="#skills" class="mobile-nav-link">Habilidades</a>
+            <a href="#process" class="mobile-nav-link">Processo</a>
+            <a href="#contact" class="mobile-nav-link">Contato</a>
+            <a href="https://wa.me/5521998563527" target="_blank" class="btn-nav-accent mobile-nav-btn">Falar Comigo</a>
+        </div>
+    </div>
+
+    <!-- SECTION 1: HERO (PRIMEIRA DOBRA) -->
+    <header class="hero-section hero" id="hero">
+        <div class="bg-aura-wrapper">
+            <div class="aura aura-1"></div>
+            <div class="aura aura-2"></div>
+            <div class="aura aura-3"></div>
+            <div class="bg-noise"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="animate-blur-in delay-100">
+                        <div class="badge">
+                            <span class="badge-dot"></span>
+                            Engenheiro de IA & Automações
+                        </div>
+                        <h1 class="headline">
+                            Automações inteligentes.<br>
+                            Resultados <span>reais.</span>
+                        </h1>
+                    </div>
+                    
+                    <p class="subheadline animate-fade-up delay-200">
+                        Desenvolvo agentes de IA, automações inteligentes e soluções com Python e n8n que eliminam tarefas repetitivas, conectam sistemas e aumentam a produtividade de empresas.
+                    </p>
+
+                    <div class="cta-group animate-fade-up delay-300">
+                        <a href="#projects" class="btn-beam">
+                            <div class="beam-border"></div>
+                            <div class="btn-content-bg">
+                                <div class="lines-overlay"></div>
+                                <div class="bottom-glow"></div>
+                            </div>
+                            <span style="position: relative; z-index: 10; display: flex; align-items: center;">
+                                Ver Projetos
+                                <i data-lucide="arrow-up-right" style="margin-left: 0.6rem; width: 1.1rem; height: 1.1rem;"></i>
+                            </span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/gabriel-andrade-reis123" target="_blank" class="btn-secondary">
+                            <span class="iconify" data-icon="logos:linkedin-icon" style="font-size: 1.1rem;"></span>
+                            <span>LinkedIn</span>
+                        </a>
+
+                        <a href="#contact" class="btn-secondary">
+                            <i data-lucide="message-square" style="width: 1.1rem; height: 1.1rem; color: var(--tech-cyan);"></i>
+                            <span>Contato</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-container animate-blur-in delay-200">
+                    <div class="image-glow"></div>
+                    
+                    <!-- Floating Automation & AI Badges -->
+                    <div class="tool-icon animate-float" style="top: 2%; left: -5%; animation-duration: 7s;">
+                        <span class="iconify" data-icon="logos:python"></span>
+                        <span>Python</span>
+                    </div>
+                    <div class="tool-icon animate-float" style="top: 22%; right: -8%; animation-duration: 5s; animation-delay: 1s;">
+                        <i data-lucide="workflow" style="color: #ff6d5a;"></i>
+                        <span>n8n</span>
+                    </div>
+                    <div class="tool-icon animate-float" style="bottom: 30%; left: -10%; animation-duration: 8s; animation-delay: 2s;">
+                        <i data-lucide="cpu" style="color: var(--tech-cyan);"></i>
+                        <span>LangChain</span>
+                    </div>
+                    <div class="tool-icon animate-float" style="bottom: 8%; right: -5%; animation-duration: 6s; animation-delay: 0.5s;">
+                        <span class="iconify" data-icon="logos:postgresql"></span>
+                        <span>SQL & APIs</span>
+                    </div>
+
+                    <!-- Profile Photo Wrapper -->
+                    <div class="hero-image-wrapper animate-float">
+                        <img src="assets/gabriel-andrade.jpg" alt="Gabriel dos Reis Andrade" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION 2: TIMELINE (SEGUNDA SEÇÃO) -->
+        <section class="experience-section" id="about">
+            <div class="section-bg">
+                <div class="dots-grid"></div>
+            </div>
+
+            <div class="timeline-outer">
+                <h2 class="headline" style="text-align: center; margin-bottom: 7rem; max-width: 900px; margin-inline: auto;">
+                    Da tecnologia de campo à <span>Inteligência Artificial.</span>
+                </h2>
+
+                <div class="timeline-body" style="position: relative;">
+                    <div class="timeline-v-line"></div>
+                    <div class="timeline-v-progress" id="timeline-progress-v"></div>
+
+                    <!-- 2020: M&E Consulting -->
+                    <div class="timeline-item-wrapper">
+                        <div class="timeline-v-dot"></div>
+                        <div class="timeline-item-content">
+                            <span class="timeline-v-year">2020</span>
+                            <div class="timeline-card-glass">
+                                <div class="company-header">
+                                    <div class="company-logo">
+                                        <i data-lucide="map-pin"></i>
+                                    </div>
+                                    <h3 class="company-name">M&E Consulting</h3>
+                                </div>
+                                <p class="job-desc">
+                                    Atuação em projetos de cadastro técnico e coleta de informações para infraestrutura urbana, desenvolvendo organização de dados e suporte operacional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2022: Intellissis -->
+                    <div class="timeline-item-wrapper">
+                        <div class="timeline-v-dot"></div>
+                        <div class="timeline-item-content">
+                            <span class="timeline-v-year">2022</span>
+                            <div class="timeline-card-glass">
+                                <div class="company-header">
+                                    <div class="company-logo">
+                                        <i data-lucide="zap"></i>
+                                    </div>
+                                    <h3 class="company-name">Intellissis</h3>
+                                </div>
+                                <p class="job-desc">
+                                    Participou de projetos técnicos voltados para redes elétricas, realizando cadastros, levantamentos de campo e documentação técnica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024: Piloto de Drone -->
+                    <div class="timeline-item-wrapper">
+                        <div class="timeline-v-dot"></div>
+                        <div class="timeline-item-content">
+                            <span class="timeline-v-year">2024</span>
+                            <div class="timeline-card-glass">
+                                <div class="company-header">
+                                    <div class="company-logo">
+                                        <i data-lucide="navigation"></i>
+                                    </div>
+                                    <h3 class="company-name">Piloto de Drone</h3>
+                                </div>
+                                <p class="job-desc">
+                                    Operação de drones para mapeamento de redes elétricas, captura de imagens e geração de informações para engenharia e planejamento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2025: Análise e Desenvolvimento de Sistemas -->
+                    <div class="timeline-item-wrapper">
+                        <div class="timeline-v-dot"></div>
+                        <div class="timeline-item-content">
+                            <span class="timeline-v-year">2025</span>
+                            <div class="timeline-card-glass">
+                                <div class="company-header">
+                                    <div class="company-logo">
+                                        <i data-lucide="code-2"></i>
+                                    </div>
+                                    <h3 class="company-name">Análise e Dev. de Sistemas</h3>
+                                </div>
+                                <p class="job-desc">
+                                    Início da graduação em ADS na Uninter, com foco em desenvolvimento de software, banco de dados e programação de alto nível.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2026: Especialização em IA -->
+                    <div class="timeline-item-wrapper">
+                        <div class="timeline-v-dot"></div>
+                        <div class="timeline-item-content">
+                            <span class="timeline-v-year">2026</span>
+                            <div class="timeline-card-glass">
+                                <div class="company-header">
+                                    <div class="company-logo">
+                                        <i data-lucide="bot"></i>
+                                    </div>
+                                    <h3 class="company-name">Especialização em IA</h3>
+                                </div>
+                                <p class="job-desc">
+                                    Formação em Engenharia de Agentes de IA pela Asimov Academy, criando agentes inteligentes, automações com n8n, LangChain, Python e LLMs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PROJECTS (TERCEIRA SEÇÃO) -->
+        <section class="projects-section" id="projects">
+            <div class="proj-bg"></div>
+            <div class="projects-container">
+                <h2 class="headline" style="text-align: center; margin-bottom: 2rem; margin-inline: auto;">
+                    Projetos que <span>desenvolvi</span>
+                </h2>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Agente de Avaliação de Currículos -->
+                    <div class="project-card featured" style="--accent-rgb: 0, 245, 255;">
+                        <div class="project-inner-grid"></div>
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1200" alt="Agente de Avaliação de Currículos">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">LLM</span>
+                                <span class="tech-tag">Prompt Engineering</span>
+                            </div>
+                            <h3 class="project-title">Agente de Avaliação<br>de Currículos</h3>
+                            <p class="project-desc">Sistema utilizando IA para analisar currículos automaticamente comparando qualificações técnicas diretamente com requisitos de vagas de emprego.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Automações Empresariais com n8n -->
+                    <div class="project-card" style="--accent-rgb: 255, 109, 90;">
+                        <div class="project-inner-grid"></div>
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800" alt="Automações Empresariais com n8n">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tech-tag">n8n</span>
+                                <span class="tech-tag">APIs</span>
+                                <span class="tech-tag">Webhooks</span>
+                                <span class="tech-tag">IA</span>
+                            </div>
+                            <h3 class="project-title">Automações<br>Empresariais n8n</h3>
+                            <p class="project-desc">Fluxos inteligentes integrando APIs REST, WhatsApp, bancos de dados e IA para eliminar processos manuais repetitivos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Chatbot com IA -->
+                    <div class="project-card" style="--accent-rgb: 157, 0, 255;">
+                        <div class="project-inner-grid"></div>
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=800" alt="Chatbot com IA">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">Groq</span>
+                                <span class="tech-tag">LLM</span>
+                            </div>
+                            <h3 class="project-title">Chatbot<br>com IA</h3>
+                            <p class="project-desc">Assistente conversacional desenvolvido com LangChain e LLMs de alta velocidade para responder dúvidas com contexto corporativo personalizado.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Dashboard de Dados -->
+                    <div class="project-card featured" style="--accent-rgb: 59, 130, 246;">
+                        <div class="project-inner-grid"></div>
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200" alt="Dashboard de Dados">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">APIs</span>
+                            </div>
+                            <h3 class="project-title">Dashboard<br>de Dados</h3>
+                            <p class="project-desc">Painel executivo para acompanhamento em tempo real de indicadores, métricas operacionais e integração contínua de bancos de dados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- SECTION 5: SKILLS (QUINTA SEÇÃO) -->
+        <section class="skills-section" id="skills">
+            <div class="skills-container">
+                <h2 class="headline" style="text-align: center; margin-bottom: 1rem; margin-inline: auto;">
+                    Tecnologias que <span>utilizo</span>
+                </h2>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Inteligência Artificial -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i data-lucide="brain"></i>
+                            </div>
+                            <h3 class="category-title">Inteligência Artificial</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><span class="iconify" data-icon="logos:python"></span> Python</span>
+                            <span class="skill-badge"><i data-lucide="cpu"></i> LangChain</span>
+                            <span class="skill-badge"><i data-lucide="sparkles"></i> Claude</span>
+                            <span class="skill-badge"><span class="iconify" data-icon="logos:openai-icon"></span> ChatGPT</span>
+                            <span class="skill-badge"><i data-lucide="terminal"></i> Prompt Eng.</span>
+                            <span class="skill-badge"><i data-lucide="bot"></i> LLMs</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Automação -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i data-lucide="workflow"></i>
+                            </div>
+                            <h3 class="category-title">Automação</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i data-lucide="git-merge" style="color:#ff6d5a;"></i> n8n</span>
+                            <span class="skill-badge"><i data-lucide="webhook"></i> APIs REST</span>
+                            <span class="skill-badge"><i data-lucide="radio"></i> Webhooks</span>
+                            <span class="skill-badge"><i data-lucide="layers"></i> Integrações</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Desenvolvimento -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i data-lucide="code"></i>
+                            </div>
+                            <h3 class="category-title">Desenvolvimento</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><span class="iconify" data-icon="logos:javascript"></span> JavaScript</span>
+                            <span class="skill-badge"><span class="iconify" data-icon="logos:postgresql"></span> SQL</span>
+                            <span class="skill-badge"><span class="iconify" data-icon="logos:github-icon"></span> GitHub</span>
+                            <span class="skill-badge"><span class="iconify" data-icon="logos:figma"></span> Figma</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Ferramentas -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i data-lucide="wrench"></i>
+                            </div>
+                            <h3 class="category-title">Ferramentas</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><span class="iconify" data-icon="logos:visual-studio-code"></span> VS Code</span>
+                            <span class="skill-badge"><span class="iconify" data-icon="logos:git-icon"></span> Git</span>
+                            <span class="skill-badge"><span class="iconify" data-icon="logos:docker-icon"></span> Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: WORK PROCESS (SEXTA SEÇÃO) -->
+        <section class="process-section" id="process">
+            <div class="process-container">
+                <h2 class="headline" style="text-align: center; margin-bottom: 1rem; margin-inline: auto;">
+                    Como transformo uma ideia em <span>automação</span>
+                </h2>
+
+                <div class="process-grid">
+                    <!-- Step 1 -->
+                    <div class="process-card">
+                        <span class="process-number">01</span>
+                        <div class="process-icon-box">
+                            <i data-lucide="search"></i>
+                        </div>
+                        <h3 class="process-title">Entendimento do problema</h3>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-card">
+                        <span class="process-number">02</span>
+                        <div class="process-icon-box">
+                            <i data-lucide="compass"></i>
+                        </div>
+                        <h3 class="process-title">Planejamento da solução</h3>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-card">
+                        <span class="process-number">03</span>
+                        <div class="process-icon-box">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3 class="process-title">Desenvolvimento da automação</h3>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="process-card">
+                        <span class="process-number">04</span>
+                        <div class="process-icon-box">
+                            <i data-lucide="rocket"></i>
+                        </div>
+                        <h3 class="process-title">Entrega, documentação e melhorias</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: FINAL CTA (SÉTIMA SEÇÃO) -->
+        <section class="cta-section" id="contact">
+            <canvas id="cta-canvas"></canvas>
+            <div class="cta-aura"></div>
+            
+            <div class="cta-container">
+                <div class="cta-card">
+                    <h2 class="headline">
+                        Vamos construir sua próxima <span>automação?</span>
+                    </h2>
+                    
+                    <p class="cta-subtitle">
+                        Se sua empresa perde tempo com tarefas repetitivas, processos manuais ou excesso de trabalho operacional, posso ajudar a transformar isso em automações inteligentes com IA.
+                    </p>
+
+                    <div class="cta-action">
+                        <a href="https://wa.me/5521998563527" target="_blank" class="btn-beam cta-large">
+                            <div class="beam-border"></div>
+                            <div class="btn-content-bg">
+                                <div class="lines-overlay"></div>
+                                <div class="bottom-glow"></div>
+                            </div>
+                            <span style="position: relative; z-index: 10; display: flex; align-items: center; gap: 0.8rem;">
+                                <i data-lucide="calendar" style="color: var(--tech-cyan); width: 1.2rem; height: 1.2rem;"></i>
+                                Agendar uma conversa
+                            </span>
+                        </a>
+
+                        <div style="margin-top: 2.2rem; display: flex; gap: 1.2rem; align-items: center; justify-content: center; flex-wrap: wrap;">
+                            <a href="https://www.linkedin.com/in/gabriel-andrade-reis123" target="_blank" class="btn-secondary" style="height: 46px; padding: 0 1.6rem; font-size: 0.8rem;">
+                                <span class="iconify" data-icon="logos:linkedin-icon" style="font-size: 1.05rem;"></span>
+                                <span>Ver LinkedIn</span>
+                            </a>
+                            <a href="mailto:gabriel.01dosreis@gmail.com" class="btn-secondary" style="height: 46px; padding: 0 1.6rem; font-size: 0.8rem;">
+                                <i data-lucide="mail" style="width: 1rem; height: 1rem; color: var(--tech-cyan);"></i>
+                                <span>Enviar E-mail</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="position: relative; z-index: 10; text-align: center; padding: 2.5rem 1rem; background: #000; border-top: 1px solid rgba(255,255,255,0.08); color: rgba(255,255,255,0.5); font-size: 0.85rem;">
+        <p>© 2026 Gabriel dos Reis Andrade — Engenheiro de IA & Automações</p>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 1.8rem; margin-top: 1rem; flex-wrap: wrap;">
+            <a href="https://www.linkedin.com/in/gabriel-andrade-reis123" target="_blank" style="color: var(--tech-cyan); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: opacity 0.3s;">
+                <span class="iconify" data-icon="logos:linkedin-icon"></span> LinkedIn
+            </a>
+            <a href="mailto:gabriel.01dosreis@gmail.com" style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: opacity 0.3s;">
+                <i data-lucide="mail" style="width: 1rem; height: 1rem;"></i> gabriel.01dosreis@gmail.com
+            </a>
+            <a href="https://wa.me/5521998563527" target="_blank" style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: opacity 0.3s;">
+                <i data-lucide="phone" style="width: 1rem; height: 1rem;"></i> (21) 99856-3527
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts for Interactivity -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // --- Intersection Observer for Animations ---
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('projects-grid')) {
+                        const cards = entry.target.querySelectorAll('.project-card');
+                        cards.forEach((card, index) => {
+                            setTimeout(() => card.classList.add('active'), index * 150);
+                        });
+                    } else if (entry.target.classList.contains('skills-grid')) {
+                        const cards = entry.target.querySelectorAll('.skill-category-card');
+                        cards.forEach((card, index) => {
+                            setTimeout(() => card.classList.add('active'), index * 120);
+                        });
+                    } else if (entry.target.classList.contains('process-grid')) {
+                        const cards = entry.target.querySelectorAll('.process-card');
+                        cards.forEach((card, index) => {
+                            setTimeout(() => card.classList.add('active'), index * 150);
+                        });
+                    } else {
+                        entry.target.classList.add('active');
+                    }
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, revealOptions);
+
+        document.querySelectorAll('.timeline-item-wrapper, .projects-grid, .skills-grid, .process-grid, .cta-section').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // --- Vertical Timeline Progress Fill ---
+        const progressLine = document.getElementById('timeline-progress-v');
+        const timelineBody = document.querySelector('.timeline-body');
+
+        const updateTimelineProgress = () => {
+            if (!progressLine || !timelineBody) return;
+            const rect = timelineBody.getBoundingClientRect();
+            const viewHeight = window.innerHeight;
+            const startScroll = rect.top - (viewHeight / 2);
+            const totalHeight = rect.height;
+            let progress = 0;
+            if (startScroll < 0) {
+                progress = Math.min(Math.max((Math.abs(startScroll) / totalHeight) * 100, 0), 100);
+                progressLine.style.height = `${progress}%`;
+            }
+        };
+
+        window.addEventListener('scroll', updateTimelineProgress);
+        window.addEventListener('resize', updateTimelineProgress);
+        updateTimelineProgress();
+
+        // --- Mobile Navigation Menu Toggle ---
+        const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-btn');
+
+        if (mobileToggleBtn && mobileMenuOverlay) {
+            mobileToggleBtn.addEventListener('click', () => {
+                const isActive = mobileMenuOverlay.classList.toggle('active');
+                mobileToggleBtn.setAttribute('aria-expanded', isActive);
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuOverlay.classList.remove('active');
+                });
+            });
+        }
+
+        // --- 3D Tilt Effect on Project Cards (Desktop Mouse Only) ---
+        const isHoverSupported = window.matchMedia('(hover: hover)').matches;
+
+        if (isHoverSupported) {
+            const handleOnMouseMove = e => {
+                const { currentTarget: target } = e;
+                const rect = target.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                target.style.setProperty("--mouse-x", `${x}px`);
+                target.style.setProperty("--mouse-y", `${y}px`);
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * -8;
+                const rotateY = ((x - centerX) / centerX) * 8;
+
+                target.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            };
+
+            const handleMouseLeave = e => {
+                const { currentTarget: target } = e;
+                target.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
+            };
+
+            for(const card of document.querySelectorAll(".project-card")) {
+                card.addEventListener('mousemove', handleOnMouseMove);
+                card.addEventListener('mouseleave', handleMouseLeave);
+            }
+        }
+
+        // --- Interactive Particle Node Canvas for CTA Section ---
+        const canvas = document.getElementById('cta-canvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            let particles = [];
+
+            const resize = () => {
+                width = canvas.width = canvas.parentElement.offsetWidth;
+                height = canvas.height = canvas.parentElement.offsetHeight;
+            };
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.8;
+                    this.vy = (Math.random() - 0.5) * 0.8;
+                    this.radius = Math.random() * 2 + 1;
+                }
+
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x < 0 || this.x > width) this.vx *= -1;
+                    if (this.y < 0 || this.y > height) this.vy *= -1;
+                }
+
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(0, 245, 255, 0.6)';
+                    ctx.fill();
+                }
+            }
+
+            const initParticles = () => {
+                resize();
+                particles = [];
+                const count = Math.floor((width * height) / 18000);
+                for (let i = 0; i < count; i++) {
+                    particles.push(new Particle());
+                }
+            };
+
+            const animate = () => {
+                ctx.clearRect(0, 0, width, height);
+                for (let i = 0; i < particles.length; i++) {
+                    particles[i].update();
+                    particles[i].draw();
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < 120) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(0, 245, 255, ${0.2 * (1 - dist / 120)})`;
+                            ctx.lineWidth = 0.8;
+                            ctx.stroke();
+                        }
+                    }
+                }
+                requestAnimationFrame(animate);
+            };
+
+            window.addEventListener('resize', initParticles);
+            initParticles();
+            animate();
+        }
+    </script>
+</body>
+</html>
